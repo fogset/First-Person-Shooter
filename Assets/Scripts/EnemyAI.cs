@@ -30,4 +30,12 @@ public class EnemyAI : MonoBehaviour
             navMeshAgent.SetDestination(target.position);
         }
     }
+
+    void OnDrawGizmosSelected()
+    {
+        // Display the explosion radius when selected
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawWireSphere(transform.position, chaseRange);
+    }
 }
