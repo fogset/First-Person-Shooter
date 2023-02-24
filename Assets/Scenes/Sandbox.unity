@@ -6311,6 +6311,7 @@ MonoBehaviour:
   range: 100
   damage: 30
   muzzleFlash: {fileID: 1470678641}
+  hitEffect: {fileID: 5728835802497845930, guid: 76c38c5b8c0cfac4190a8f6f614ef39b, type: 3}
 --- !u!4 &918726261 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8642225304373351647, guid: 50a0925b0c22af146a2d15615f815a1c, type: 3}
@@ -6719,6 +6720,7 @@ GameObject:
   - component: {fileID: 1225967772}
   - component: {fileID: 1225967771}
   - component: {fileID: 1225967777}
+  - component: {fileID: 1225967778}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -6853,6 +6855,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+--- !u!95 &1225967778
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225967770}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2f53c9215d0414c4d9904da36a93d553, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1243577024
 GameObject:
   m_ObjectHideFlags: 0
