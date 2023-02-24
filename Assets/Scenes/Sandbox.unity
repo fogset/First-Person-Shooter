@@ -439,11 +439,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3793318779761454802, guid: 58b632e7c0bcc2f4b89b1917bc9f33fa, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3793318779761454802, guid: 58b632e7c0bcc2f4b89b1917bc9f33fa, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3793318779761454802, guid: 58b632e7c0bcc2f4b89b1917bc9f33fa, type: 3}
       propertyPath: m_LocalScale.z
@@ -480,6 +480,14 @@ PrefabInstance:
     - target: {fileID: 6788391300052398356, guid: 58b632e7c0bcc2f4b89b1917bc9f33fa, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788391300052398356, guid: 58b632e7c0bcc2f4b89b1917bc9f33fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788391300052398356, guid: 58b632e7c0bcc2f4b89b1917bc9f33fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6788391300052398356, guid: 58b632e7c0bcc2f4b89b1917bc9f33fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -539,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6788391300052398440, guid: 58b632e7c0bcc2f4b89b1917bc9f33fa, type: 3}
       propertyPath: m_StoppingDistance
-      value: 2
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 6788391300052398447, guid: 58b632e7c0bcc2f4b89b1917bc9f33fa, type: 3}
       propertyPath: m_Name
@@ -6756,7 +6764,7 @@ NavMeshAgent:
   m_Acceleration: 5
   avoidancePriority: 50
   m_AngularSpeed: 5
-  m_StoppingDistance: 2
+  m_StoppingDistance: 3.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
