@@ -8,7 +8,9 @@ public class SceneLoader : MonoBehaviour
     public void ReloadGame()
     {
         SceneManager.LoadScene(0);
-        Debug.Log("Reload Scene");
+        Time.timeScale = 1;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void QuitGame()
