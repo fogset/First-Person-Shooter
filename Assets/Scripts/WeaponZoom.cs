@@ -7,6 +7,9 @@ public class WeaponZoom : MonoBehaviour
     CinemachineVirtualCamera virtualCamera;
 
     [SerializeField]
+    StarterAssets.FirstPersonController fps_controller;
+
+    [SerializeField]
     float zoomedOutFOV = 41f;
 
     [SerializeField]
@@ -18,15 +21,13 @@ public class WeaponZoom : MonoBehaviour
     [SerializeField]
     float zoomedInSensitivity = 0.5f;
 
-    StarterAssets.FirstPersonController fps_controller;
-
+    //StarterAssets.FirstPersonController fps_controller;
     bool zoomedInToggle = false;
 
-    private void Start()
-    {
-        fps_controller = GetComponent<StarterAssets.FirstPersonController>();
-    }
-
+    // private void Start()
+    // {
+    //     fps_controller = GetComponent<StarterAssets.FirstPersonController>();
+    // }
     private void Update()
     {
         Zoom();
