@@ -491,8 +491,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 1621355091}
-  zoomedOutFOV: 60
+  zoomedOutFOV: 41
   zoomedInFOV: 20
+  zoomedOutSensitivity: 2
+  zoomedInSensitivity: 0.5
 --- !u!1001 &72583996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5328,6 +5330,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2077743157083158853, guid: c76f31ab4d3294643b28dd45295421bf, type: 3}
+      propertyPath: look.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077743157083158853, guid: c76f31ab4d3294643b28dd45295421bf, type: 3}
+      propertyPath: look.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2340745117497189689, guid: c76f31ab4d3294643b28dd45295421bf, type: 3}
       propertyPath: m_Name
       value: Player
@@ -5398,7 +5408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3348010565718819120, guid: c76f31ab4d3294643b28dd45295421bf, type: 3}
       propertyPath: m_Lens.FieldOfView
-      value: 40
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 3348010565718819121, guid: c76f31ab4d3294643b28dd45295421bf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5450,7 +5460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6336390301050039838, guid: c76f31ab4d3294643b28dd45295421bf, type: 3}
       propertyPath: field of view
-      value: 40
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 6336390301050039838, guid: c76f31ab4d3294643b28dd45295421bf, type: 3}
       propertyPath: m_FOVAxisMode
