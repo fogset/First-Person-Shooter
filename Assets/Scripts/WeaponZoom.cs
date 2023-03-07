@@ -28,6 +28,11 @@ public class WeaponZoom : MonoBehaviour
     // {
     //     fps_controller = GetComponent<StarterAssets.FirstPersonController>();
     // }
+    private void OnDisable()
+    {
+        zoomOut();
+    }
+
     private void Update()
     {
         Zoom();
@@ -39,18 +44,26 @@ public class WeaponZoom : MonoBehaviour
         {
             if (zoomedInToggle == false)
             {
-                zoomedInToggle = true;
-
-                virtualCamera.m_Lens.FieldOfView = zoomedInFOV;
-                fps_controller.RotationSpeed = zoomedInSensitivity;
+                zoomedIn();
             }
             else
             {
-                zoomedInToggle = false;
-
-                virtualCamera.m_Lens.FieldOfView = zoomedOutFOV;
-                fps_controller.RotationSpeed = zoomedOutSensitivity;
+                zoomOut();
             }
         }
+    }
+
+    private void zoomOut()
+    {
+        zoomedInToggle = false;
+        virtualCamera.m_Lens.FieldOfView = zoomedOutFOV;
+        fps_controller.RotationSpeed = zoomedOutSensitivity;
+    }
+
+    private void zoomedIn()
+    {
+        zoomedInToggle = true;
+        virtualCamera.m_Lens.FieldOfView = zoomedInFOV;
+        fps_controller.RotationSpeed = zoomedInSensitivity;
     }
 }
