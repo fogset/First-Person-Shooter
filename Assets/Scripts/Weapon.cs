@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -34,6 +35,9 @@ public class Weapon : MonoBehaviour
     [SerializeField]
     bool countineFire = false;
 
+    [SerializeField]
+    TextMeshProUGUI ammoText;
+
     private void OnEnable()
     {
         canShoot = true;
@@ -41,6 +45,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
+        DisplayAmmo();
         if (
             Input.GetKey(KeyCode.Mouse0) &&
             countineFire == true &&
@@ -53,6 +58,12 @@ public class Weapon : MonoBehaviour
         {
             StartCoroutine(Shoot());
         }
+    }
+
+    private void DisplayAmmo()
+    {
+        int currentAmmo = ammoSlot.GetCurrentAmmo(ammoType);
+        ammoText.text = currentAmmo.ToString();
     }
 
     IEnumerator Shoot()
